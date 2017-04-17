@@ -1950,16 +1950,22 @@
 
 			.main.style2 .content {
 				width: 40%;
+				margin-left: 20%;
+			}
+
+			.skills-container {
+				margin-left: 10%;
 			}
 
 			.one-down {
-				padding-left: 30%;
+				padding-left: 40%;
 			}
 		}
 
 		@media screen and (max-width: 1280px) {
 			.main.style2 .content {
-				width: 75%;
+				width: 90%;
+				margin-top: -80px;
 			}
 
 		}
@@ -2158,17 +2164,17 @@
 	}
 
 	.skills-container {
-		width: 90%;
+		width: 75%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin-left: 20px;
+		margin-left: 10px;
 		justify-content: space-around;
 	}
 
 	.skills-container > li {
 		flex-direction: column;
-		margin: 10px;
+		margin: 10px 10px;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -2177,7 +2183,7 @@
 
 	.skills-container > li > i {
 		font-size: 48px;
-		margin-bottom: 8px;
+		/*margin-bottom: 8px;*/
 		margin-top: 10px;
 	}
 
