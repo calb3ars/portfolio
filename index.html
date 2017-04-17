@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Big Picture by HTML5 UP</title>
+		<title>Andrew Jiang</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -18,12 +16,16 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Big Picture</h1>
+				<h1>Andrew Jiang</h1>
+				<!-- <ul class="actions">
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-linked"><span class="label">LinkedIn</span></a></li>
+				</ul> -->
 				<nav>
 					<ul>
 						<li><a href="#intro">Intro</a></li>
-						<li><a href="#one">What I Do</a></li>
-						<li><a href="#two">Who I Am</a></li>
+						<li><a href="#one">Skills</a></li>
+						<!-- <li><a href="#two">Projects</a></li> -->
 						<li><a href="#work">My Work</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -32,15 +34,26 @@
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
+				<!-- <img class="background" src="images/working.jpg"/> -->
+				<div class="homepage-hero-module background">
+			    <div class="video-container">
+			        <div class="filter"></div>
+			        <video autoplay loop class="fillWidth">
+			            <source src="images/Love-Coding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			            <source src="images/Love-Coding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			        </video>
+			    </div>
+				</div>
 				<div class="content">
 					<header>
-						<h2>Hey.</h2>
+						<h2 class="header blue">He<span class="hello">ll</span>o World<span class="color">.</span></h2>
 					</header>
-					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
-					by <a href="https://html5up.net">HTML5 UP</a>, built on <a href="http://skel.io">Skel</a>,
-					and released for free under the <a href="https://html5up.net/license">Creative Commons Attribution license</a>.</p>
+						<p class="about-1">I'm a Full-Stack Software Engineer who enjoys making the world a better place through code. I take pride in creating
+						software that is functional, intuitive for users, and beautifully designed.</p>
+						<!-- <p class="about-2" style="margin-top: 25px">Outside of coding I enjoy touring the country as a performing member of San Jose Taiko, leading fastbreaks on the basketball court, landing jumps on my snowboard, cooking dinners for friends and family, and the endless pursuit to brew the perfect cup of coffee.</p> -->
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<!-- <a href="#one" class="button style2 down">More</a> -->
+						<a href="#one"><i class="fa fa-angle-down button-down" aria-hidden="true"></i></a>
 					</footer>
 				</div>
 			</section>
@@ -48,18 +61,76 @@
 		<!-- One -->
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
-					<header>
-						<h2>What I Do</h2>
+					<header class="section-2">
+						<h2 class="header"><span class="color">Skills</span></h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<p>I enjoy using the following languages in my projects and constantly add new tools to my arsenal</p>
+					<div class="skills-container">
+						<ul class="skills skills-1">
+							<li class="item">
+									<i class="devicon-react-original-wordmark colored"></i></li>
+									<div>React</div>
+							<li>
+							<li class="item">
+								<i class="devicon-javascript-plain colored"></i>
+								<div>JavaScript</div>
+							</li>
+							<li class="item">
+								<i class="devicon-babel-plain colored"></i>
+								<div>Babel</div>
+							 </li>
+						</ul>
+						<ul class="skills skills-3">
+							<li class="item">
+								<i class="devicon-react-original colored"></i>
+								<div>React Native</div>
+							</li>
+							<li class="item">
+								<i class="devicon-ruby-plain colored"></i>
+								<div>Ruby</div>
+							</li>
+							<li class="item">
+								<i class="devicon-rails-plain-wordmark"></i>
+								<div>Ruby on Rails</div>
+							</li>
+							<li class="item">
+								<i class="devicon-css3-plain-wordmark"></i>
+								<div>CSS3</div>
+							</li>
+							<li class="item">
+								<i class="devicon-sass-original"></i>
+								<div>Sass</div>
+							</li>
+						</ul>
+						<ul class="skills skills-3">
+							<li class="item">
+								<i class="devicon-html5-plain-wordmark"></i>
+								<div>HTML5</div>
+							</li>
+							<li class="item">
+								<i class="devicon-heroku-original-wordmark"></i>
+								<div>Heroku</div>
+							</li>
+							<li class="item">
+								<i class="devicon-jasmine-plain-wordmark"></i>
+								<div>Jasmine</div>
+							</li>
+							<li class="item">
+								<i class="devicon-jquery-plain-wordmark"></i>
+								<div>jQuery</div>
+							</li>
+							<li class="item">
+								<i class="devicon-postgresql-plain-wordmark"></i>
+								<div>PostgreSQL<div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
+				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
+			<!-- <section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
 						<h2>Who I Am</h2>
@@ -69,7 +140,7 @@
 					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
-			</section>
+			</section> -->
 
 		<!-- Work -->
 			<section id="work" class="main style3 primary">
@@ -110,8 +181,8 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Say Hello.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<h2>Let's work together.</h2>
+						<p>Send a quick email to reach out about opportunities</p>
 					</header>
 					<div class="box">
 						<form method="post" action="#">
@@ -131,17 +202,17 @@
 
 				<!-- Icons -->
 					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
 						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li> -->
 					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						<li>&copy;2017 Andrew Jiang</li>
 					</ul>
 
 			</footer>

@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -476,12 +470,14 @@
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
-		font-weight: 300;
+		font-family: 'Frank Ruhl Libre', sans-serif;
+		/*font-family: "Source Sans Pro", "sans-serif";*/
+		letter-spacing: 10px;
+		font-weight: 400;
 		font-size: 18pt;
 		line-height: 1.75em;
 		color: #39454b;
-		letter-spacing: 0.025em;
+		letter-spacing: 0.035em;
 	}
 
 		@media screen and (max-width: 1920px) {
@@ -526,9 +522,9 @@
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		font-weight: 400;
 		color: inherit;
-		letter-spacing: -0.0325em;
+		letter-spacing: 5px;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -537,9 +533,25 @@
 		}
 
 	h2 {
+		color: #E8F8F8;
+		/*padding-top: 2.5em;*/
 		font-size: 2.25em;
 		line-height: 1.25em;
-		letter-spacing: -0.05em;
+		letter-spacing: -0.03em;
+	}
+
+	h2 .hello {
+		letter-spacing: -0.06em;
+	}
+
+	h2 .color {
+		color: #0abab5;
+	}
+
+	.button-down {
+		font-size: 5em;
+		/*font-weight: 100;*/
+		color: #0abab5;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -591,7 +603,7 @@
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1em;
+		/*margin-bottom: 1em;*/
 	}
 
 /* Box */
@@ -658,8 +670,8 @@
 		input[type="reset"].down,
 		.button.down,
 		button.down {
-			width: 5em;
-			height: 5em;
+			width: 3em;
+			height: 3em;
 			line-height: 4.5em;
 			padding: 0;
 			background-image: url("images/dark-arrow.svg");
@@ -929,7 +941,7 @@
 		}
 
 		.image.fit {
-			display: block;
+			display:
 			width: 100%;
 		}
 
@@ -940,7 +952,7 @@
 
 		.image.centered {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 2em 0;``
 		}
 
 			.image.centered img {
@@ -1022,10 +1034,15 @@
 		margin-bottom: 1em;
 	}
 
+	.section-2{
+		margin-top: 10px;
+	}
+
 		header p {
 			display: block;
 			margin: 1em 0 0 0;
-			padding: 0 0 0.5em 0;
+			/*margin-bottom: 2em;*/
+			padding: 6em 0 0.5em 0;
 		}
 
 	footer {
@@ -1665,12 +1682,15 @@
 /* Header */
 
 	#header {
+		font-family: 'Frank Ruhl Libre', sans-serif;
+		color: #0abab5;
 		position: fixed;
 		z-index: 10000;
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(232, 248, 248, 0.1);
+		/*background: rgba(255, 255, 255, 0.10);*/
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -1686,6 +1706,9 @@
 		}
 
 			#header h1 a {
+				color: #79D9D6;
+				font-family: 'Frank Ruhl', sans-serif;
+				font-weight: 300;
 				font-size: 1.25em;
 			}
 
@@ -1897,7 +1920,7 @@
 			}
 
 			.main.dark .button.style2 {
-				border-color: #ffffff;
+				border-color: ##E8F8F8;
 			}
 
 				.main.dark .button.style2:hover {
@@ -1910,6 +1933,7 @@
 
 				.main.dark .button.style2.down {
 					background-image: url("images/dark-arrow.svg");
+					margin-top: 8em;
 				}
 
 		body.is-touch .main {
@@ -2093,27 +2117,55 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
 
+	.background {
+		float: left;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		/*-webkit-filter: blur(2px);
+	  -moz-filter: blur(2px);
+	  -o-filter: blur(2px);
+	  -ms-filter: blur(2px);
+  	filter: blur(2px);*/
+	}
+
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("../../images/rainbowmac.jpg");
+		background-size: cover;
+		/*background-attachment: fixed, fixed;*/
+		/*background-position: top left, center center;*/
+		background-position: 0% -200px;
+		/*background-position: 0% -350px; */
+	}
+
+	.skills-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: 20px;
+	}
+
+	.skills > li > i {
+		font-size: 36px;
 	}
 
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
+		background-repeat: none;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
