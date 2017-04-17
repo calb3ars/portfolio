@@ -77,6 +77,9 @@
 			transition: none !important;
 		}
 
+/* Colors  */
+		$color-blue: #0abab5;
+
 /* Spinner */
 
 	@-moz-keyframes spinner-rotate {
@@ -545,17 +548,13 @@
 	}
 
 	h2 .color {
-		color: #0abab5;
-	}
-
-	.color {
-		color: #36C6C2;
+		color: $color-blue;
 	}
 
 	.button-down {
 		font-size: 5em;
 		/*font-weight: 100;*/
-		color: #0abab5;
+		color: $color-blue;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -624,8 +623,6 @@
 
 		.box.style2 {
 			padding: 3.5em 2.5em 3.5em 2.5em;
-			border-radius: 2px;
-			background-color: rgba(0, 0, 0, 0.80);
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1952,14 +1949,12 @@
 				width: 40%;
 			}
 
-			.one-down {
-				padding-left: 30%;
-			}
 		}
 
 		@media screen and (max-width: 1280px) {
+
 			.main.style2 .content {
-				width: 75%;
+				width: 50%;
 			}
 
 		}
