@@ -470,7 +470,7 @@
 /* Type */
 
 	body, input, textarea, select {
-		font-family: 'Frank Ruhl Libre', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		/*font-family: "Source Sans Pro", "sans-serif";*/
 		letter-spacing: 10px;
 		font-weight: 400;
@@ -1688,7 +1688,8 @@
 /* Header */
 
 	#header {
-		font-family: 'Frank Ruhl Libre', sans-serif;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
 		color: #0abab5;
 		position: fixed;
 		z-index: 10000;
@@ -2169,7 +2170,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		margin-left: 5px;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	.skills-container > li {
