@@ -480,6 +480,10 @@
 		letter-spacing: 0.035em;
 	}
 
+	.body-text {
+		color: #ccc;
+	}
+
 		@media screen and (max-width: 1920px) {
 
 			body, input, textarea, select {
@@ -1295,6 +1299,7 @@
 		width: 45em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
+		border-radius: 3px;
 	}
 
 		.gallery article {
@@ -1915,7 +1920,9 @@
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				/*background: #ffffff;*/
+				background: url('../../images/geometric.jpg');
+				background-size: cover;
 			}
 
 			.main.style3.secondary {
@@ -2207,6 +2214,7 @@
 	#contact {
 		overflow: hidden;
 		padding-bottom: 0;
+		background: url("../../images/geometric.jpg");
 	}
 
 		#contact .box {
